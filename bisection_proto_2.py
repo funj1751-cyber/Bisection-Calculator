@@ -49,7 +49,7 @@ def bisection(f, a, b, max_iter=50):
         steps.append((i, a, b, m, fa, fb, fm))
 
         if prev is not None and round(prev, 3) == round(m, 3):
-            return round(m, 3), steps
+            return round(m, 5), steps
 
         prev = m
 
